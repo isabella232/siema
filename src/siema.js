@@ -94,9 +94,9 @@ export default class Siema {
       };
 
       // Touch events
-      this.selector.addEventListener('touchstart', this.touchstartHandler, { passive: true });
+      this.selector.addEventListener('touchstart', this.touchstartHandler, { passive: false });
       this.selector.addEventListener('touchend', this.touchendHandler);
-      this.selector.addEventListener('touchmove', this.touchmoveHandler, { passive: true });
+      this.selector.addEventListener('touchmove', this.touchmoveHandler, { passive: false });
 
       // Mouse events
       this.selector.addEventListener('mousedown', this.mousedownHandler);
